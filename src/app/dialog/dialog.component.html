@@ -1,0 +1,79 @@
+<h5 mat-dialogue-title>Add a new Doctor</h5>
+
+<mat-dialog-content>
+  <form [formGroup]="doctorForm"  (submit)="addDoctor()">
+
+    <mat-form-field appearance="outline">
+      <mat-label>Doctor's Name</mat-label>
+      <input matInput formControlName="DoctorName" placeholder="Enter Doctor's Name">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Enter Full Name</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Doctor's Address</mat-label>
+      <input matInput formControlName="Address" placeholder="Enter Doctor's Address">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Enter Address</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Doctor's Age</mat-label>
+      <input matInput formControlName="Age" placeholder="Enter Doctor's Age">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Enter Valid Age</mat-hint>
+    </mat-form-field>
+
+
+    <mat-form-field appearance="outline">
+      <mat-label> Department </mat-label>
+      <mat-select formControlName="Department">
+        <mat-option value="Allergists">Allergists</mat-option>
+        <mat-option value="Cardiologists">Cardiologists</mat-option>
+        <mat-option value="Dermatologists">Dermatologists</mat-option>
+        <mat-option value="Neurologists">Neurologists</mat-option>
+        <mat-option value="Gynecologists">Gynecologists</mat-option>
+        <mat-option value="Pathologists">Pathologists</mat-option>
+        <mat-option value="Pediatricians">Pediatricians</mat-option>
+      </mat-select>
+      <mat-hint align="start">Choose a department</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label> Select Gender </mat-label>
+      <mat-select formControlName="Gender">
+        <mat-option value="Male"> Male </mat-option>
+        <mat-option value="Female"> Female </mat-option>
+        <mat-option value="Others"> Others </mat-option>
+
+      </mat-select>
+      <mat-hint align="start">Select Gender</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Choose a date</mat-label>
+      <input formControlName="JoiningDate" matInput [matDatepicker]="picker">
+      <mat-hint>Date of Joining (MM/DD/YYYY)</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="Description"></textarea>
+    </mat-form-field>
+
+    <!-- <div mat-dialog-action [align]="'end'">
+      <button mat-raised-button color="warn" mat-dialog-close> Close </button>
+      <button style="margin-left: 8px;" mat-raised-button color="primary" (submit)="addDoctor()">Save</button>
+    </div> -->
+
+
+    <div [align]="'end'" >
+    <mat-dialog-actions >
+      <button mat-raised-button color="warn" mat-dialog-close> Close </button>
+      <button style="margin-left: 8px;" mat-raised-button color="primary">Save</button>
+    </mat-dialog-actions>
+  </div>
+  </form>
+</mat-dialog-content>

@@ -1,0 +1,95 @@
+.page {
+    color: white;
+    padding: 0 1rem;
+    background: #f1f5f9;
+    &__box {
+      min-height: 120px;
+      background: #72a0ea;
+      margin: 0 -1rem;
+      font-size: 36px;
+    }
+    &__content {
+      min-height: calc(100vh - 178px);
+      border-radius: 10px;
+      margin-top: -2rem;
+      background: white;
+      color: black;
+      font-size: 2rem;
+      &-data {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  
+  .card{
+    height: 8rem;
+    background-color: rgb(203, 245, 160);
+  :hover{
+    transform: scale(1.03);
+  }
+  
+  }
+
+  .card-text{
+font-size: 14px;
+font-weight: bolder;
+  }
+
+  .card1{
+    display: flex;
+    :hover{
+      transform: scale(1.03);
+    }
+  }
+
+  .card2{
+    height: 8rem;
+    background-color: rgb(225, 206, 1) ;
+    position: relative;
+    color: black;
+    left: 35px;
+    :hover{
+      transform: scale(1.03);
+    }
+  }
+
+  .card3{
+    height: 8rem;
+    background-color: rgb(247, 147, 219);
+    position: relative;
+    left: 65px;
+    :hover{
+      transform: scale(1.03);
+    }
+  }
+
+  .card4{
+    height: 8rem;
+    background-color: rgb(247, 133, 133);
+    position: relative;
+    left: 95px;
+    :hover{
+      transform: scale(1.03);
+    }
+  }
+
+  .table td.fit, 
+.table th.fit {
+    white-space: nowrap;
+    width: 1%;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 20%;
+}

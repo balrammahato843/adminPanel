@@ -1,0 +1,49 @@
+.page {
+    color: white;
+    padding: 0 1rem;
+    background: #f1f5f9;
+    &__box {
+      min-height: 120px;
+      background: #72a0ea;
+      margin: 0 -1rem;
+      font-size: 36px;
+    }
+    &__content {
+      min-height: calc(100vh - 178px);
+      border-radius: 10px;
+      margin-top: -2rem;
+      background: white;
+      color: black;
+      font-size: 2rem;
+      &-data {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  
+  .card-body{
+    background-color: aquamarine;
+  }
+
+  .card-link{
+    font-size: small;
+  }
+  .card2{
+    position: relative;
+left: 20rem;
+bottom: 14rem;
+  }
+
+.card3{
+  background-color: rgb(255, 205, 113);
+}
+
+.card7{
+  background-color: rgb(218, 178, 255);
+  position: relative;
+  left: 40rem;
+  bottom: 28rem;
+  height: 14rem;
+}

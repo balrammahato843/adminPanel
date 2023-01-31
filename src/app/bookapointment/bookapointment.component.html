@@ -1,0 +1,84 @@
+<form [formGroup]="addPatientForm" (submit)="createPatient()">
+  <div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2">Book an Appointment</div>
+
+    <div class="page__content shadow p-3 position-relative">
+      <ul>
+        <div class="row">
+          <li>
+            <div class="col-md-4">
+              <label class="l1">First Name</label>
+              <input formControlName="firstname" type="text" class="form-control" placeholder="First name">
+            </div>
+          </li>
+          <li>
+            <div class="col-md-4 l1">
+              <label>Last Name</label>
+              <input formControlName="lastname" type="text" class="form-control" placeholder="Last name">
+            </div>
+          </li>
+          <li>
+            <div class="col-md-1 l1">
+              <label>Age</label>
+              <input formControlName="age" type="text" class="form-control" placeholder="Age">
+            </div>
+          </li>
+          <li>
+
+            <div class="col-sm-3">
+              <label class="l1">Gender</label>
+              <select class="form-select" formControlName="gender" >
+                <option selected>Choose...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="col-sm-3">
+              <label class="l1" >Select specialization</label>
+              <select class="form-select" formControlName="specialization">
+                <option selected>Choose...</option>
+                <option value="dermatologist">dermatologist</option>
+                <option value="Gynecologist">Gynecologist</option>
+                <option value="Physiotherapist">Physiotherapist </option>
+              </select>
+            </div>
+<!-- 
+
+            <div >
+              <label style="font-size: large;">Email address </label><br>
+              <input formControlName="email" type="email" class="form-control1">
+            </div> -->
+
+            <div class="form-group">
+              <label class="l1">Email address</label>
+              <input type="email" class="form-control" style="width: 40%;"    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+
+
+
+            <span class="datepicker">
+              <span>Date : </span>
+              <input type="Date">
+            </span>
+
+          </li>
+
+        </div>
+        <p>
+          <button mat-raised-button color="primary" (click)="increase1()" >Book Appointment</button>
+        </p>
+      </ul>
+
+ 
+
+    
+
+  
+
+    </div>
+  </div>
+
+
+</form>

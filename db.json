@@ -1,0 +1,55 @@
+{
+  "posts": [
+    {
+      "DoctorName": "Balram Mahato",
+      "Address": "Navi Mumbai",
+      "Age": "25",
+      "JoiningDate": "2022-12-20T18:30:00.000Z",
+      "Description": "New",
+      "Department": "Dermatologists",
+      "Gender": "Male",
+      "id": 1
+    },
+    {
+      "DoctorName": "Omkar Rawool",
+      "Address": "Bhandup",
+      "Age": "24",
+      "JoiningDate": "2022-12-13T18:30:00.000Z",
+      "Description": "hiii",
+      "Department": "Cardiologists",
+      "Gender": "Male",
+      "id": 2
+    },
+    {
+      "DoctorName": "Uttam singh",
+      "Address": "Kalwa",
+      "Age": "27",
+      "JoiningDate": "2022-12-14T18:30:00.000Z",
+      "Description": "Farzi Doctor",
+      "Department": "Allergists",
+      "Gender": "Male",
+      "id": 3
+    },
+    {
+      "DoctorName": "rahul butepwad",
+      "Address": "airoli",
+      "Age": "25",
+      "JoiningDate": "2022-12-28T18:30:00.000Z",
+      "Description": "hyy",
+      "Department": "Dermatologists",
+      "Gender": "Male",
+      "id": 4
+    }
+  ],
+  "DoctorList": [],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

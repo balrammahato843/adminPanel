@@ -1,0 +1,125 @@
+<div class="container-fluid page">
+  <div class="d-flex page__box p-3 mt-2">Doctors</div>
+  <div class="page__content shadow p-3 position-relative">
+
+    <div class="card1">
+      <div class="card" style="width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">Patient record <mat-icon>personal_injury</mat-icon> </h5>
+          <p class="card-text">Click here to get Patient Details</p>
+        </div>
+      </div>
+
+      <button mat-raised-button color="primary" class="card2" (click)="openDialog()">
+        <div  style="width: 12rem;">
+          <div class="card-body">
+            <h5 class="card-title">Add Doctor </h5>
+            <mat-icon>person_add</mat-icon>
+            <p class="card-text" style="margin-left: -0.6rem;">Click to add new Doctor</p>
+          </div>
+        </div>
+      </button>
+
+      <div class="card3" style="width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">Approve Patient <mat-icon>check_circle</mat-icon> </h5>
+          <p class="card-text">Click here to approve Patient </p>
+        </div>
+      </div>
+
+
+      <div class="card4" style="width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">Discharge Patient <mat-icon>home</mat-icon> </h5>
+          <p class="card-text">Click here to Discharge Patient </p>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+    <!-- <table  class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Dr. Name</th>
+          <th scope="col">Address</th>
+          <th scope="col">Age</th>
+          <th scope="col">Joining Date</th>
+          <th scope="col">Description</th>
+          <th scope="col">Department</th>
+          <th scope="col">Gender</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let doctorsData1 of doctorsData">
+          <td>{{doctorsData1.DoctorName}}</td>
+          <td>{{doctorsData1.Address}}</td>
+          <td>{{doctorsData1.JoiningDate}}</td>
+          <td>{{doctorsData1.Age}}</td>
+          <td>{{doctorsData1.Description}}</td>
+          <td>{{doctorsData1.Department}}</td>
+          <td>{{doctorsData1.Gender}}</td>
+        </tr>       
+      </tbody>
+    </table> -->  
+
+<div class="container">
+<div style="margin-top: 10px;">
+  <mat-form-field>
+    <mat-label>Filter </mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+  </mat-form-field>
+  
+  <div class="mat-elevation-z6">
+    <table mat-table [dataSource]="dataSource" matSort>
+        
+      <ng-container matColumnDef="DoctorName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Doctor's Name </th>
+        <td mat-cell *matCellDef="let row"> {{row.DoctorName}} </td>
+      </ng-container>
+        
+      <ng-container matColumnDef="Address">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Address </th>
+        <td mat-cell *matCellDef="let row"> {{row.Address}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="JoiningDate">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Joining Date </th>
+        <td mat-cell *matCellDef="let row"> {{row.JoiningDate}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="Age">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Age </th>
+        <td mat-cell *matCellDef="let row"> {{row.Age}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Gender">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Gender </th>
+        <td mat-cell *matCellDef="let row"> {{row.Gender}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Description">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Description </th>
+        <td mat-cell *matCellDef="let row"> {{row.Description}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Department">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Department </th>
+        <td mat-cell *matCellDef="let row"> {{row.Department}} </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+      <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+      </tr>
+    </table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+  </div>
+</div>
+    </div>
+  </div>
+</div>

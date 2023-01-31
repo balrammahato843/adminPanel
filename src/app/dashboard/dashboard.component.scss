@@ -1,0 +1,75 @@
+.page {
+    color: white;
+    padding: 0 1rem;
+    background: #f1f5f9;
+    &__box {
+      min-height: 120px;
+      background: #72a0ea;
+      margin: 0 -1rem;
+      font-size: 36px;
+    }
+    &__content {
+      min-height: calc(100vh - 178px);
+      border-radius: 10px;
+      margin-top: -2rem;
+      background: white;
+      color: black;
+      font-size: 2rem;
+      &-data {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  
+
+ h4{
+  font-size: 16px;
+  height: 57px;
+ }
+
+ .card-body{
+  background-color: aquamarine;
+
+ }
+
+ .card-body1{
+  background-color: rgb(236, 232, 232);
+  height: 253px;
+ }
+
+ .card-body2{
+  background-color: rgb(203, 247, 211);
+ }
+
+ .row{
+  display: flex;
+  margin-top: 20px;
+  padding: 20px;
+  width: 25%;
+ }
+
+
+
+.card2{
+  display: flex;
+}
+ .card{
+  margin-right: 35px;
+  width: 12rem;
+  margin-top: 10px;
+ }
+
+
+ .divider{
+height: 6px;
+ }
+
+ .grahps{
+  display: flex;
+  
+ }
+
+
+ 

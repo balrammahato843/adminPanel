@@ -1,0 +1,49 @@
+.page {
+    color: white;
+    padding: 0 1rem;
+    background: #f1f5f9;
+    &__box {
+      min-height: 120px;
+      background: #72a0ea;
+      margin: 0 -1rem;
+      font-size: 36px;
+    }
+    &__content {
+      min-height: calc(100vh - 178px);
+      border-radius: 10px;
+      margin-top: -2rem;
+      background: white;
+      color: black;
+      font-size: 2rem;
+      &-data {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  
+
+ ul li{
+    text-decoration: none;
+    outline: none;
+    background: none;
+    list-style: none;
+  }
+
+  .l1
+  {
+    font-size: medium;
+  }
+  .datepicker{
+    height: 40px;
+    width: 300px;
+    font-size: 18px;
+ 
+}
+    .form-control1{
+      width: 30%;
+      height: 28px;
+      
+    }
+  

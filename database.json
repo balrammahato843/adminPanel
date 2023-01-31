@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "firstname": "ewuyjhcbekwmc",
+      "lastname": "cewcwcwcwcwcweccwe",
+      "email": "cweubc@gmail.com",
+      "gender": "male",
+      "age": "12",
+      "specialization": "Gynecologist",
+      "id": 2
+    },
+    {
+      "firstname": null,
+      "lastname": null,
+      "email": null,
+      "gender": null,
+      "age": null,
+      "specialization": null,
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
